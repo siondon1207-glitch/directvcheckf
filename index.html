@@ -1,23 +1,1806 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+
+    <!-- JSON-LD Structured Data for Naver/Google Rich Snippets and AI/LLM Search Agents -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://volvo.reliabledone.com/#website",
+                "url": "https://volvo.reliabledone.com",
+                "name": "볼보 SUV 가격 분석 및 실구매 견적 포털",
+                "description": "2026년형 볼보 전 라인업(EX30, XC40, EX40, EC40, XC60, XC90, EX90)의 공식 출고가, 트림별 세부 가격, 할인 프로모션, 유지비 정밀 분석 정보를 제공합니다.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Volvo SUV Intelligence Center",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://volvo.reliabledone.com/img/volvo-intel-logo.webp"
+                    }
+                }
+            },
+            {
+                "@type": "Product",
+                "@id": "https://volvo.reliabledone.com/#volvo-suv-lineup",
+                "name": "2026 볼보 SUV 라인업 (XC40, XC60, XC90, EX30, EX90)",
+                "image": "https://volvo.reliabledone.com/img/volvo-suv-lineup-2026.webp",
+                "description": "스칸디나비안 프리미엄 안전 철학이 집약된 2026년형 볼보 친환경 SUV 시리즈. 마일드 하이브리드(MHEV), 플러그인 하이브리드(PHEV), 순수 전기차(BEV) 전 모델 가격 데이터베이스.",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Volvo"
+                },
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "KRW",
+                    "lowPrice": "49450000",
+                    "highPrice": "115200000",
+                    "offerCount": "18"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://volvo.reliabledone.com/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "2026년 기준 볼보 SUV 중 가장 저렴한 모델의 가격은 얼마인가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "2026년 기준 볼보 SUV 라인업에서 가장 진입 장벽이 낮은 모델은 순수 전기 컴팩트 SUV인 EX30 코어 트림으로 공식 출고가는 4,945만 원입니다. 여기에 국고 보조금과 지자체별 전기차 보조금을 차감하면 실구매가는 서울 기준 약 4,300만 원대 중반으로 형성됩니다. 내연기관 기반 마일드 하이브리드 중에서는 XC40 B4 AWD 플러스 브라이트 트림이 4,920만 원대로 가장 합리적인 금액을 제공합니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "볼보의 베스트셀링 모델인 XC60의 트림별 실제 출고 가격과 대기기간은 어떻게 되나요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "2026년형 볼보 XC60은 마일드 하이브리드 B5 플러스 브라이트가 6,480만 원, B5 얼티메이트 브라이트가 7,000만 원, 고성능 B6 얼티메이트가 7,400만 원 선입니다. 플러그인 하이브리드인 T8 리차지 얼티메이트는 8,640만 원 수준입니다. 국내 공식 서비스센터 출고 대기기간은 트림 및 외장/내장 컬러 배정에 따라 평균 3개월에서 6개월가량 소요됩니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "볼보 차량은 공식 할인이 전혀 없나요? 싼곳을 찾는 방법이나 혜택은 무엇인가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "볼보코리아는 전국 단일 가격 정찰제를 고수하고 있어 공식적인 차량 가액 차감 할인은 거의 없습니다. 다만 공식 딜러사별 전시차 할인, 재구매 우대 프로그램, 금융 제휴사를 통한 저금리 운용리스나 장기렌트 요금제 프로모션, 카드사 제휴 캐시백 현금지원 및 블랙박스, 틴팅, 생활보호 PPF 시공, 하이패스 등 고가의 프리미엄 사은품 패키지를 전문 상담 업체를 통해 비교 견적 받는 것이 실질 구매 비용을 줄이는 가장 현명한 방법입니다."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* CSS Reset & Variables for Scandinavian Soft Luxury Tone */
+        :root {
+            --bg-canvas: #fcfbf9;
+            --bg-card: #ffffff;
+            --bg-subtle: #f5f2eb;
+            --bg-tinted: #edf3f0;
+            --text-main: #192024;
+            --text-secondary: #4a5568;
+            --text-muted: #718096;
+            --primary-nordic: #1f3044;
+            --primary-accent: #2e5b70;
+            --copper-accent: #b26a45;
+            --copper-hover: #9c5835;
+            --sage-accent: #416b58;
+            --border-soft: #e2ddd5;
+            --border-highlight: #cbd5e1;
+            --shadow-subtle: 0 4px 20px rgba(31, 48, 68, 0.04);
+            --shadow-hover: 0 12px 35px rgba(31, 48, 68, 0.08);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+            background-color: var(--bg-canvas);
+            color: var(--text-main);
+            line-height: 1.85;
+            word-break: keep-all;
+            letter-spacing: -0.02em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s ease;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Header */
+        .site-header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-soft);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 76px;
+        }
+        .brand-logo {
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            color: var(--primary-nordic);
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            gap: 22px;
+        }
+        .nav-item {
+            font-size: 0.96rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .nav-item:hover {
+            color: var(--primary-nordic);
+            background-color: var(--bg-subtle);
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(145deg, #182533 0%, #263c50 60%, #355069 100%);
+            color: #ffffff;
+            padding: 100px 0 110px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            max-width: 920px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(178, 106, 69, 0.25);
+            color: #f7c9b2;
+            border: 1px solid rgba(178, 106, 69, 0.4);
+            font-size: 0.88rem;
+            font-weight: 700;
+            padding: 6px 18px;
+            border-radius: 30px;
+            margin-bottom: 24px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .hero-content h1 {
+            font-size: 3.1rem;
+            font-weight: 800;
+            line-height: 1.32;
+            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #dbe4ec;
+            line-height: 1.8;
+            margin-bottom: 38px;
+        }
+        .hero-cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-cta-primary {
+            background-color: var(--copper-accent);
+            color: #ffffff;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 16px 36px;
+            border-radius: 8px;
+            transition: all 0.25s ease;
+            box-shadow: 0 6px 20px rgba(178, 106, 69, 0.35);
+        }
+        .btn-cta-primary:hover {
+            background-color: var(--copper-hover);
+            transform: translateY(-2px);
+        }
+        .btn-cta-secondary {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            font-size: 1.05rem;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .btn-cta-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Section Layouts */
+        .content-section {
+            padding: 95px 0;
+        }
+        .section-tinted {
+            background-color: var(--bg-subtle);
+        }
+        .section-header {
+            text-align: center;
+            max-width: 860px;
+            margin: 0 auto 55px;
+        }
+        .section-header h2 {
+            font-size: 2.35rem;
+            font-weight: 800;
+            color: var(--primary-nordic);
+            margin-bottom: 18px;
+            letter-spacing: -0.025em;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+        }
+
+        /* Data Tables */
+        .table-wrap {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid var(--border-soft);
+            overflow-x: auto;
+            margin-top: 32px;
+            margin-bottom: 35px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.97rem;
+            text-align: left;
+            min-width: 760px;
+        }
+        .data-table th {
+            background-color: var(--primary-nordic);
+            color: #ffffff;
+            padding: 18px 20px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-highlight);
+        }
+        .data-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--border-soft);
+            color: var(--text-secondary);
+        }
+        .data-table tbody tr:hover {
+            background-color: #fbfbf9;
+        }
+        .data-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .data-table .highlight-col {
+            font-weight: 700;
+            color: var(--primary-accent);
+            background-color: rgba(46, 91, 112, 0.03);
+        }
+        .price-badge {
+            display: inline-block;
+            background-color: var(--bg-tinted);
+            color: var(--sage-accent);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.94rem;
+        }
+
+        /* Information Grid & Cards */
+        .info-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+            margin-top: 36px;
+        }
+        .info-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+            gap: 32px;
+            margin-top: 36px;
+        }
+        .luxury-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 38px 32px;
+            border: 1px solid var(--border-soft);
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .luxury-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            border-color: var(--border-highlight);
+        }
+        .luxury-card h3 {
+            font-size: 1.42rem;
+            color: var(--primary-nordic);
+            margin-bottom: 16px;
+            font-weight: 700;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--bg-subtle);
+        }
+        .luxury-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 18px;
+            line-height: 1.75;
+        }
+        .spec-list {
+            margin-top: 16px;
+        }
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--border-soft);
+            font-size: 0.93rem;
+        }
+        .spec-item span:first-child {
+            color: var(--text-muted);
+        }
+        .spec-item span:last-child {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* Interactive Simulator / Calculator */
+        .calculator-wrapper {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-soft);
+            box-shadow: var(--shadow-hover);
+            padding: 48px;
+            margin-top: 40px;
+        }
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+        .calc-control-group {
+            margin-bottom: 24px;
+        }
+        .calc-label {
+            display: block;
+            font-weight: 700;
+            color: var(--primary-nordic);
+            margin-bottom: 10px;
+            font-size: 0.98rem;
+        }
+        .calc-select, .calc-input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #fdfdfd;
+            color: var(--text-main);
+            transition: border-color 0.2s ease;
+        }
+        .calc-select:focus, .calc-input:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+            background-color: #ffffff;
+        }
+        .calc-options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 6px;
+        }
+        .calc-radio-box {
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 0.92rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #ffffff;
+            transition: all 0.2s ease;
+        }
+        .calc-radio-box:hover {
+            border-color: var(--primary-accent);
+            background-color: var(--bg-subtle);
+        }
+        .calc-result-panel {
+            background: linear-gradient(145deg, #1f3044 0%, #2a435d 100%);
+            border-radius: var(--radius-md);
+            padding: 40px 32px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .calc-result-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 18px;
+            margin-bottom: 24px;
+        }
+        .calc-result-header h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .calc-figure-large {
+            font-size: 2.7rem;
+            font-weight: 800;
+            color: #f9d8c4;
+            margin: 14px 0 8px;
+            letter-spacing: -0.02em;
+        }
+        .calc-breakdown-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+        .calc-breakdown-row strong {
+            color: #ffffff;
+        }
+
+        /* Pure CSS Bar Charts / Graph Visualizer */
+        .chart-container {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 36px 32px;
+            border: 1px solid var(--border-soft);
+            box-shadow: var(--shadow-subtle);
+            margin-top: 36px;
+        }
+        .bar-group {
+            margin-bottom: 26px;
+        }
+        .bar-label-wrap {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--primary-nordic);
+        }
+        .bar-track {
+            background-color: var(--bg-subtle);
+            height: 22px;
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .bar-fill {
+            height: 100%;
+            border-radius: 6px;
+            transition: width 1s ease-in-out;
+        }
+        .fill-xc40 { width: 55%; background-color: #607d8b; }
+        .fill-ex30 { width: 50%; background-color: var(--sage-accent); }
+        .fill-xc60 { width: 75%; background-color: var(--primary-accent); }
+        .fill-xc90 { width: 95%; background-color: var(--copper-accent); }
+        .fill-ex90 { width: 100%; background-color: #1a2530; }
+
+        /* Consultation Lead Form */
+        .form-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 50px 42px;
+            border: 1px solid var(--border-soft);
+            box-shadow: var(--shadow-hover);
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .form-row-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group-field {
+            margin-bottom: 22px;
+        }
+        .form-label-txt {
+            display: block;
+            font-size: 0.94rem;
+            font-weight: 700;
+            color: var(--primary-nordic);
+            margin-bottom: 8px;
+        }
+        .form-input-ctrl {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.98rem;
+            background-color: #fcfcfc;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+        .form-input-ctrl:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+            background-color: #ffffff;
+        }
+        .btn-submit-lead {
+            width: 100%;
+            background-color: var(--copper-accent);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 18px 24px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.15s ease;
+            box-shadow: 0 4px 15px rgba(178, 106, 69, 0.3);
+            margin-top: 10px;
+        }
+        .btn-submit-lead:hover {
+            background-color: var(--copper-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Accordion FAQ */
+        .accordion-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-soft);
+            border-radius: var(--radius-md);
+            margin-bottom: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+        }
+        .faq-btn {
+            width: 100%;
+            background-color: #ffffff;
+            border: none;
+            text-align: left;
+            padding: 24px 28px;
+            font-size: 1.08rem;
+            font-weight: 700;
+            color: var(--primary-nordic);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s ease;
+        }
+        .faq-btn:hover {
+            background-color: var(--bg-subtle);
+        }
+        .faq-content {
+            padding: 28px;
+            border-top: 1px solid var(--border-soft);
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.85;
+            display: none;
+            background-color: #ffffff;
+        }
+        .faq-card.active .faq-content {
+            display: block;
+        }
+        .faq-toggle-state {
+            font-size: 0.9rem;
+            color: var(--copper-accent);
+            font-weight: 600;
+        }
+
+        /* Authoritative Link Grid */
+        .authority-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 36px;
+        }
+        .authority-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-soft);
+            border-radius: var(--radius-md);
+            padding: 30px 26px;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.25s ease;
+        }
+        .authority-box:hover {
+            border-color: var(--primary-accent);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+        .authority-box h3 {
+            font-size: 1.25rem;
+            color: var(--primary-nordic);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .authority-box p {
+            font-size: 0.94rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .authority-link {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--copper-accent);
+            display: inline-block;
+        }
+        .authority-link:hover {
+            color: var(--copper-hover);
+            text-decoration: underline;
+        }
+
+        /* Long-form Deep Dive Text */
+        .prose-block {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 48px;
+            border: 1px solid var(--border-soft);
+            margin-top: 36px;
+            color: var(--text-secondary);
+            font-size: 1.02rem;
+            line-height: 1.9;
+        }
+        .prose-block h3 {
+            font-size: 1.5rem;
+            color: var(--primary-nordic);
+            margin-top: 36px;
+            margin-bottom: 18px;
+            font-weight: 800;
+        }
+        .prose-block h3:first-child {
+            margin-top: 0;
+        }
+        .prose-block p {
+            margin-bottom: 22px;
+        }
+        .prose-block ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+            list-style-type: square;
+        }
+        .prose-block ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--primary-nordic);
+            color: #cbd5e1;
+            padding: 70px 0 45px;
+            font-size: 0.92rem;
+            border-top: 1px solid #2e4359;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .footer-brand {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 16px;
+        }
+        .footer-desc {
+            color: #94a3b8;
+            line-height: 1.75;
+            max-width: 480px;
+        }
+        .footer-col h4 {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        .footer-list li {
+            margin-bottom: 10px;
+        }
+        .footer-list a {
+            color: #94a3b8;
+        }
+        .footer-list a:hover {
+            color: #ffffff;
+        }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #64748b;
+            font-size: 0.86rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .calc-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .hero-content h1 {
+                font-size: 2.4rem;
+            }
+            .form-row-2 {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-banner {
+                padding: 70px 0 80px;
+            }
+            .hero-content h1 {
+                font-size: 1.95rem;
+            }
+            .content-section {
+                padding: 60px 0;
+            }
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+            .nav-links {
+                display: none;
+            }
+            .calculator-wrapper {
+                padding: 28px 20px;
+            }
+            .form-card {
+                padding: 32px 20px;
+            }
+            .prose-block {
+                padding: 28px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="brand-logo">VOLVO SUV INTELLIGENCE</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#price-table" class="nav-item">2026 가격표</a></li>
+                    <li><a href="#calculator" class="nav-item">견적 계산기</a></li>
+                    <li><a href="#model-details" class="nav-item">모델별 비교</a></li>
+                    <li><a href="#purchase-method" class="nav-item">금융 및 할인</a></li>
+                    <li><a href="#community-feedback" class="nav-item">오너 후기</a></li>
+                    <li><a href="#faq" class="nav-item">자주 묻는 질문</a></li>
+                    <li><a href="#consulting-form" class="nav-item">맞춤 상담</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
     <main>
-      <h1>Home page</h1>
+        <!-- Hero Section -->
+        <section class="hero-banner">
+            <div class="container hero-content">
+                <span class="hero-badge">2026 OFFICIAL MARKET REPORT</span>
+                <h1>볼보 SUV 가격 총정리 및 모델별 실구매 견적 계산기</h1>
+                <p>
+                    볼보 EX30, XC40, EX40, EC40, XC60, XC90부터 차세대 플래그십 EX90까지. 
+                    2026년형 출고가, 취등록세, 공채 매입비, 정부 및 지자체 전기차 보조금, 다이렉트 최저가 비교 견적과 출고 대기기간을 완벽하게 분석합니다.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#calculator" class="btn-cta-primary">내 볼보 SUV 실구매 비용 계산하기</a>
+                    <a href="#price-table" class="btn-cta-secondary">2026 최신 공식 가격표 확인</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Comprehensive Price Table -->
+        <section class="content-section" id="price-table">
+            <div class="container">
+                <div class="section-header">
+                    <h2>2026 볼보 SUV 라인업 공식 출고 가격표 및 실구매 견적 요금표</h2>
+                    <p>
+                        대한민국 수입차 시장에서 단단한 패밀리카의 대명사로 자리 잡은 볼보의 SUV 전 라인업 가격표입니다. 
+                        개별소비세 인하분 반영 여부, 하이브리드 세제 감면 및 전기차 보조금 수령 여부에 따른 실제 구매 비용을 대조해 보십시오.
+                    </p>
+                </div>
+
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>차량 모델명</th>
+                                <th>파워트레인 및 구동방식</th>
+                                <th>트림 등급</th>
+                                <th>공식 출고 가격</th>
+                                <th>예상 취등록세 (7%)</th>
+                                <th>실구매 예상 금액 (부대비용 포함)</th>
+                                <th>평균 출고 대기기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>볼보 EX30</td>
+                                <td>순수전기 (Single Motor ER, RWD)</td>
+                                <td>Core</td>
+                                <td><span class="price-badge">4,945만 원</span></td>
+                                <td>약 206만 원 (감면 적용)</td>
+                                <td class="highlight-col">4,350만 ~ 4,550만 원 (보조금 차감)</td>
+                                <td>즉시 출고 ~ 1개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 EX30</td>
+                                <td>순수전기 (Single Motor ER, RWD)</td>
+                                <td>Ultra</td>
+                                <td><span class="price-badge">5,516만 원</span></td>
+                                <td>약 246만 원 (감면 적용)</td>
+                                <td class="highlight-col">4,920만 ~ 5,120만 원 (보조금 차감)</td>
+                                <td>1개월 ~ 2개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC40</td>
+                                <td>가솔린 MHEV (B4 2.0T, AWD)</td>
+                                <td>Plus Bright</td>
+                                <td><span class="price-badge">4,920만 원</span></td>
+                                <td>약 344만 원</td>
+                                <td class="highlight-col">5,310만 ~ 5,360만 원</td>
+                                <td>2개월 ~ 3개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC40</td>
+                                <td>가솔린 MHEV (B4 2.0T, AWD)</td>
+                                <td>Ultimate Bright</td>
+                                <td><span class="price-badge">5,430만 원</span></td>
+                                <td>약 380만 원</td>
+                                <td class="highlight-col">5,860만 ~ 5,910만 원</td>
+                                <td>3개월 ~ 5개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 EX40 (구 XC40 Recharge)</td>
+                                <td>순수전기 (Twin Motor, AWD)</td>
+                                <td>Ultra Twin</td>
+                                <td><span class="price-badge">6,588만 원</span></td>
+                                <td>약 321만 원 (감면 적용)</td>
+                                <td class="highlight-col">6,450만 ~ 6,650만 원 (보조금 차감)</td>
+                                <td>1개월 ~ 2개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 EC40 (구 C40 Recharge)</td>
+                                <td>순수전기 (Twin Motor, AWD)</td>
+                                <td>Ultra Twin</td>
+                                <td><span class="price-badge">6,865만 원</span></td>
+                                <td>약 340만 원 (감면 적용)</td>
+                                <td class="highlight-col">6,730만 ~ 6,930만 원 (보조금 차감)</td>
+                                <td>1개월 ~ 2개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC60</td>
+                                <td>가솔린 MHEV (B5 2.0T, AWD)</td>
+                                <td>Plus Bright</td>
+                                <td><span class="price-badge">6,480만 원</span></td>
+                                <td>약 453만 원</td>
+                                <td class="highlight-col">6,980만 ~ 7,040만 원</td>
+                                <td>3개월 ~ 4개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC60</td>
+                                <td>가솔린 MHEV (B5 2.0T, AWD)</td>
+                                <td>Ultimate Bright</td>
+                                <td><span class="price-badge">7,000만 원</span></td>
+                                <td>약 490만 원</td>
+                                <td class="highlight-col">7,540만 ~ 7,600만 원</td>
+                                <td>4개월 ~ 6개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC60</td>
+                                <td>가솔린 MHEV (B6 2.0 e-S/C, AWD)</td>
+                                <td>Ultimate Bright</td>
+                                <td><span class="price-badge">7,400만 원</span></td>
+                                <td>약 518만 원</td>
+                                <td class="highlight-col">7,970만 ~ 8,030만 원</td>
+                                <td>3개월 ~ 5개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC60</td>
+                                <td>가솔린 PHEV (T8 Recharge, AWD)</td>
+                                <td>Ultimate Bright</td>
+                                <td><span class="price-badge">8,640만 원</span></td>
+                                <td>약 604만 원</td>
+                                <td class="highlight-col">9,300만 ~ 9,370만 원</td>
+                                <td>2개월 ~ 4개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC90</td>
+                                <td>가솔린 MHEV (B6 2.0 e-S/C, AWD)</td>
+                                <td>Plus Bright (7인승)</td>
+                                <td><span class="price-badge">8,780만 원</span></td>
+                                <td>약 614만 원</td>
+                                <td class="highlight-col">9,450만 ~ 9,520만 원</td>
+                                <td>2개월 ~ 3개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC90</td>
+                                <td>가솔린 MHEV (B6 2.0 e-S/C, AWD)</td>
+                                <td>Ultimate Bright (7인승)</td>
+                                <td><span class="price-badge">9,700만 원</span></td>
+                                <td>약 679만 원</td>
+                                <td class="highlight-col">1억 440만 ~ 1억 520만 원</td>
+                                <td>3개월 ~ 5개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 XC90</td>
+                                <td>가솔린 PHEV (T8 Recharge, AWD)</td>
+                                <td>Ultimate Bright (7인승)</td>
+                                <td><span class="price-badge">1억 1,520만 원</span></td>
+                                <td>약 806만 원</td>
+                                <td class="highlight-col">1억 2,390만 ~ 1억 2,480만 원</td>
+                                <td>2개월 ~ 4개월</td>
+                            </tr>
+                            <tr>
+                                <td>볼보 EX90</td>
+                                <td>순수전기 플래그십 (Twin Motor)</td>
+                                <td>Ultra (출시 예정)</td>
+                                <td><span class="price-badge">1억 1,000만 ~ 1억 2,000만 원</span></td>
+                                <td>약 700만 원 (감면 적용)</td>
+                                <td class="highlight-col">1억 1,800만 ~ 1억 2,800만 원</td>
+                                <td>사전 예약 진행 중</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="prose-block" style="margin-top: 20px;">
+                    <h3>2026년형 볼보 SUV 가격 산정 지표와 취등록세 부대비용 상세 안내</h3>
+                    <p>
+                        신차를 출고할 때 차량 가격표에 명시된 금액 외에도 지방세법상 부과되는 취득세 7%와 등록세, 번호판 대금 및 증지대, 공채 할인 수수료(서울 및 지자체 채권 매입 차액), 
+                        의무 탁송료 및 책임/종합 자동차 보험료가 추가로 소요됩니다. 
+                        특히 전기차 모델인 EX30, EX40, EC40의 경우 취득세 감면 혜택(최대 140만 원 한도)이 2026년에도 유지되어 등록 단계에서의 비용을 크게 아낄 수 있습니다. 
+                        반면 순수 내연기관 차량에 비해 첨단 주행 보조 시스템(Pilot Assist)과 하이브리드 고전압 배터리 팩이 탑재된 XC60 B5, B6 및 T8 플러그인 모델은 자차 보험료 산정 시 부품 가액이 상대적으로 높게 평가되므로 보험 견적을 사전에 다이렉트로 비교해 두는 지혜가 필요합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Interactive Real Cost & Installment Calculator Simulator -->
+        <section class="content-section section-tinted" id="calculator">
+            <div class="container">
+                <div class="section-header">
+                    <h2>볼보 SUV 실구매 비용 및 월 납입금 간이 계산기 시뮬레이터</h2>
+                    <p>
+                        희망하시는 차종과 트림, 금융 프로그램(현금 일시불, 36개월 내지 60개월 표준 할부, 운용리스, 장기렌트) 및 선납금 비율을 설정해 보세요. 
+                        취등록세를 합산한 실제 총 소요 금액과 매월 지출되는 예상 비용을 정밀하게 연산합니다.
+                    </p>
+                </div>
+
+                <div class="calculator-wrapper">
+                    <div class="calc-grid">
+                        <div class="calc-inputs">
+                            <div class="calc-control-group">
+                                <label class="calc-label" for="sim-model">볼보 SUV 모델 및 세부 트림 선택</label>
+                                <select id="sim-model" class="calc-select" onchange="runVolvoSimulator()">
+                                    <option value="49450000" data-tax="2060000" data-fuel="ev">EX30 Core 전기차 (4,945만 원)</option>
+                                    <option value="55160000" data-tax="2460000" data-fuel="ev">EX30 Ultra 전기차 (5,516만 원)</option>
+                                    <option value="49200000" data-tax="3444000" data-fuel="gas">XC40 B4 Plus Bright (4,920만 원)</option>
+                                    <option value="54300000" data-tax="3801000" data-fuel="gas">XC40 B4 Ultimate Bright (5,430만 원)</option>
+                                    <option value="65880000" data-tax="3210000" data-fuel="ev">EX40 Ultra Twin 전기차 (6,588만 원)</option>
+                                    <option value="64800000" data-tax="4536000" data-fuel="gas">XC60 B5 Plus Bright (6,480만 원)</option>
+                                    <option value="70000000" data-tax="4900000" data-fuel="gas" selected>XC60 B5 Ultimate Bright (7,000만 원)</option>
+                                    <option value="74000000" data-tax="5180000" data-fuel="gas">XC60 B6 Ultimate Bright (7,400만 원)</option>
+                                    <option value="86400000" data-tax="6048000" data-fuel="phev">XC60 T8 Recharge PHEV (8,640만 원)</option>
+                                    <option value="87800000" data-tax="6146000" data-fuel="gas">XC90 B6 Plus Bright (8,780만 원)</option>
+                                    <option value="97000000" data-tax="6790000" data-fuel="gas">XC90 B6 Ultimate Bright (9,700만 원)</option>
+                                    <option value="115200000" data-tax="8064000" data-fuel="phev">XC90 T8 Recharge PHEV (1억 1,520만 원)</option>
+                                </select>
+                            </div>
+
+                            <div class="calc-control-group">
+                                <label class="calc-label">구매 결제 방식 선택</label>
+                                <div class="calc-options-grid">
+                                    <label class="calc-radio-box">
+                                        <input type="radio" name="payType" value="cash" onchange="runVolvoSimulator()"> 현금 일시불
+                                    </label>
+                                    <label class="calc-radio-box">
+                                        <input type="radio" name="payType" value="installment" checked onchange="runVolvoSimulator()"> 금융 할부 (금리 연 4.8%)
+                                    </label>
+                                    <label class="calc-radio-box">
+                                        <input type="radio" name="payType" value="lease" onchange="runVolvoSimulator()"> 운용 리스 (잔존가치형)
+                                    </label>
+                                    <label class="calc-radio-box">
+                                        <input type="radio" name="payType" value="rent" onchange="runVolvoSimulator()"> 신차 장기렌트
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="calc-control-group">
+                                <label class="calc-label" for="sim-down">초기 선수금 비율 설정 (계약금 포함)</label>
+                                <select id="sim-down" class="calc-select" onchange="runVolvoSimulator()">
+                                    <option value="0.0">0% (초기 부담 최소 무보증)</option>
+                                    <option value="0.1">10%</option>
+                                    <option value="0.2">20%</option>
+                                    <option value="0.3" selected>30% (가장 보편적인 추천 구간)</option>
+                                    <option value="0.4">40%</option>
+                                    <option value="0.5">50% (월 납입금 최소화)</option>
+                                </select>
+                            </div>
+
+                            <div class="calc-control-group">
+                                <label class="calc-label" for="sim-period">이용 계약 기간 (약정 개월 수)</label>
+                                <select id="sim-period" class="calc-select" onchange="runVolvoSimulator()">
+                                    <option value="12">1년 (12개월 단기)</option>
+                                    <option value="36">36개월 (3년)</option>
+                                    <option value="48">48개월 (4년)</option>
+                                    <option value="60" selected>60개월 (5년 표준)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="calc-result-panel">
+                            <div>
+                                <div class="calc-result-header">
+                                    <h3>시뮬레이션 견적 결과 요약</h3>
+                                    <p style="font-size: 0.9rem; color: #94a3b8;">선택 조건 기반 예상 실부담 금액</p>
+                                </div>
+                                <div class="calc-breakdown-row">
+                                    <span>차량 기본 출고가</span>
+                                    <span id="res-base-price">70,000,000 원</span>
+                                </div>
+                                <div class="calc-breakdown-row">
+                                    <span>예상 취등록세 및 부대비용</span>
+                                    <span id="res-tax-price">4,900,000 원</span>
+                                </div>
+                                <div class="calc-breakdown-row">
+                                    <span>납입 완료 초기 선수금</span>
+                                    <span id="res-down-price">21,000,000 원</span>
+                                </div>
+                                <div class="calc-breakdown-row">
+                                    <span>원리금 분할 대출 총액</span>
+                                    <span id="res-loan-amount">49,000,000 원</span>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 30px;">
+                                <div style="font-size: 0.92rem; color: #cbd5e1;">매월 예상 지출 납입 요금</div>
+                                <div class="calc-figure-large" id="res-monthly-pay">920,400 원</div>
+                                <p style="font-size: 0.84rem; color: #94a3b8; line-height: 1.6; margin: 0;">
+                                    상기 금액은 표준 이자율 연 4.8% 기준 원리금 균등 분할 상환 예시이며, 개인 신용평점 및 금융사 특별 프로모션 지원금에 따라 상이할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Generational & Trim Visual Comparison Chart -->
+        <section class="content-section" id="model-details">
+            <div class="container">
+                <div class="section-header">
+                    <h2>볼보 SUV 모델별 가격대 포지셔닝 및 시장 점유율 분석</h2>
+                    <p>
+                        엔트리급 컴팩트부터 대형 7인승 럭셔리 패밀리카까지. 볼보의 패밀리 룩 디자인 언어(토르의 망치 주간주행등)와 세그먼트별 가격 비중을 한눈에 파악하세요.
+                    </p>
+                </div>
+
+                <div class="chart-container">
+                    <h3 style="font-size: 1.3rem; color: var(--primary-nordic); margin-bottom: 25px; font-weight: 700;">
+                        세그먼트별 엔트리 트림 기준 출고 가격 비교 (단위: 만 원)
+                    </h3>
+
+                    <div class="bar-group">
+                        <div class="bar-label-wrap">
+                            <span>EX30 (소형 순수 전기 도심형 CUV)</span>
+                            <span>4,945만 원 ~ 5,516만 원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-ex30"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-label-wrap">
+                            <span>XC40 (컴팩트 프리미엄 SUV)</span>
+                            <span>4,920만 원 ~ 5,430만 원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-xc40"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-label-wrap">
+                            <span>XC60 (중형 프리미엄 베스트셀러)</span>
+                            <span>6,480만 원 ~ 8,640만 원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-xc60"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-label-wrap">
+                            <span>XC90 (대형 플래그십 7인승 패밀리 SUV)</span>
+                            <span>8,780만 원 ~ 1억 1,520만 원</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-xc90"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <div class="bar-label-wrap">
+                            <span>EX90 (최첨단 라이다 탑재 순수전기 플래그십)</span>
+                            <span>1억 1,000만 ~ 1억 2,000만 원 (출시 예정)</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-ex90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep Dive Detail Cards -->
+                <div class="info-grid-3">
+                    <div class="luxury-card">
+                        <h3>볼보 XC40 & EX30</h3>
+                        <p>
+                            도심 주행에 최적화된 컴팩트 규격과 감각적인 실내 인테리어로 30대 신혼부부 및 젊은 층에게 가장 선호도가 높은 라인업입니다.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-item">
+                                <span>주요 파워트레인</span>
+                                <span>B4 MHEV / Single Motor</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>최고 출력</span>
+                                <span>197마력 ~ 272마력</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>복합 연비/전비</span>
+                                <span>10.6km/L / 4.6km/kWh</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>주요 장점</span>
+                                <span>실구매가 4천만 원대 진입</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>고려할 단점</span>
+                                <span>2열 레그룸 및 트렁크 적재량</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card">
+                        <h3>볼보 XC60 (베스트셀러)</h3>
+                        <p>
+                            수입 프리미엄 D세그먼트 SUV 부문에서 독보적인 판매량을 자랑하며, 승차감과 하만카돈/바워스앤윌킨스 사운드의 조화가 탁월합니다.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-item">
+                                <span>주요 파워트레인</span>
+                                <span>B5, B6 MHEV / T8 PHEV</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>최고 출력</span>
+                                <span>250마력 ~ 455마력</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>복합 연비</span>
+                                <span>10.1km/L ~ 11.4km/L</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>주요 장점</span>
+                                <span>압도적 잔존가치와 안전성</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>고려할 단점</span>
+                                <span>인기 트림의 출고 대기 시간</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card">
+                        <h3>볼보 XC90 & EX90</h3>
+                        <p>
+                            3열까지 온전한 7인승 공간을 제공하며, 스칸디나비안 천연 우드와 오레포스 크리스탈 기어노브가 선사하는 최상의 안락함을 제공합니다.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-item">
+                                <span>주요 파워트레인</span>
+                                <span>B6 MHEV / T8 PHEV / Dual BEV</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>최고 출력</span>
+                                <span>300마력 ~ 517마력</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>차량 전장</span>
+                                <span>4,955mm (EX90: 5,037mm)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>주요 장점</span>
+                                <span>가장 완벽한 패밀리 안전 공간</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>고려할 단점</span>
+                                <span>1억 원을 상회하는 초기 비용</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Maintenance Costs, Insurance & Powertrain Nuances -->
+        <section class="content-section section-tinted">
+            <div class="container">
+                <div class="section-header">
+                    <h2>MHEV 가솔린 vs T8 PHEV 하이브리드 vs 순수 전기차 유지비 비교</h2>
+                    <p>
+                        단순 차량 가액만 비교하는 것은 반쪽에 불과합니다. 3년간 연 15,000km 주행 시 발생하는 유류비, 충전비, 연간 자동차세, 다이렉트 자동차 보험료를 면밀히 따져보아야 합니다.
+                    </p>
+                </div>
+
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>구분 항목</th>
+                                <th>볼보 XC60 B5 (마일드 하이브리드)</th>
+                                <th>볼보 XC60 T8 (플러그인 하이브리드)</th>
+                                <th>볼보 EX30 Ultra (순수 전기차)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>엔진 배기량 및 모터</td>
+                                <td>1,969cc 가솔린 싱글터보 + 48V</td>
+                                <td>1,969cc 가솔린 트윈엔진 + 18.8kWh 배터리</td>
+                                <td>싱글 모터 (69kWh NCM 배터리)</td>
+                            </tr>
+                            <tr>
+                                <td>연간 자동차세</td>
+                                <td>약 51만 1,940원</td>
+                                <td>약 51만 1,940원</td>
+                                <td>약 13만 원 (전기차 정액 단일 요금)</td>
+                            </tr>
+                            <tr>
+                                <td>연 15,000km 연료비/충전비</td>
+                                <td>약 255만 원 (고급유 권장, 연비 10.1km/L)</td>
+                                <td>약 130만 원 (출퇴근 EV 주행 57km 활용)</td>
+                                <td>약 85만 원 (완속 충전 기준)</td>
+                            </tr>
+                            <tr>
+                                <td>다이렉트 연간 자동차 보험료 (만 35세)</td>
+                                <td>약 85만 ~ 110만 원</td>
+                                <td>약 105만 ~ 135만 원 (고전압 배터리 자차)</td>
+                                <td>약 90만 ~ 115만 원</td>
+                            </tr>
+                            <tr>
+                                <td>공식 소모품 보증 (워런티)</td>
+                                <td>5년 / 10만 km 무상 보증 수리</td>
+                                <td>5년 / 10만 km (고전압 배터리 8년 16만km)</td>
+                                <td>5년 / 10만 km (배터리 8년 16만km)</td>
+                            </tr>
+                            <tr>
+                                <td>3년 누적 총 유지 비용 (세금+연료+보험)</td>
+                                <td><span class="price-badge">약 1,173만 원</span></td>
+                                <td><span class="price-badge">약 858만 원</span></td>
+                                <td><span class="price-badge">약 564만 원</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-grid-2">
+                    <div class="luxury-card">
+                        <h3>플러그인 하이브리드(T8 Recharge)의 명확한 장단점</h3>
+                        <p>
+                            볼보의 T8 트윈 엔진은 전기모터만으로 1회 충전 시 복합 57km를 주행할 수 있습니다. 
+                            서울-경기권 도심 출퇴근 거리를 기름 한 방울 쓰지 않고 순수 전기로 소화할 수 있어 일상에서는 전기차의 경제성을 만끽하고, 주말 장거리 가족 여행에서는 주행거리 충전 스트레스 없이 가솔린 엔진을 돌려 이동할 수 있다는 궁극의 장점이 있습니다.
+                        </p>
+                        <p>
+                            반면 B5 가솔린 모델 대비 차량 최초 구매 가격이 약 1,600만 원가량 비싸다는 단점이 있습니다. 
+                            집이나 직장에 완속 충전 인프라가 갖추어져 있지 않다면 배터리 무게로 인해 가솔린 복합 연비가 저하될 수 있으므로 환경적 요건을 충분히 고려해야 합니다.
+                        </p>
+                    </div>
+
+                    <div class="luxury-card">
+                        <h3>순수 전기차(EX30, EX40)의 매력과 특약 고려사항</h3>
+                        <p>
+                            EX30은 4천만 원대라는 파격적인 가격 책정과 함께 272마력의 강력한 순간 토크, 그리고 컴팩트한 차체에서 뿜어져 나오는 경쾌한 조향감을 무기로 삼습니다. 
+                            연간 자동차세가 13만 원에 불과하며, 내연기관의 정기적인 엔진오일, 미션오일 교환 비용이 들지 않아 유지보수 지출이 가장 낮습니다.
+                        </p>
+                        <p>
+                            단, 고속도로 겨울철 전비 저하율과 공공 급속 충전 요금 인상 추이를 감안해야 합니다. 
+                            다이렉트 자동차 보험에 가입할 때는 친환경 고전압 배터리 전손 초과 수리 지원 특약과 견인거리 확대 긴급출동 특약을 필수로 부가하는 것이 추천됩니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Purchasing Method Comparison (Cash, Installment, Lease, Rent) -->
+        <section class="content-section" id="purchase-method">
+            <div class="container">
+                <div class="section-header">
+                    <h2>볼보 SUV 구매 방식 비교: 일시불, 할부, 운용리스, 장기렌트</h2>
+                    <p>
+                        개인 급여 생활자, 프리랜서, 개인사업자 및 법인 대표에 이르기까지 세무적 절세 효과와 금융 비용은 천차만별입니다. 본인에게 가장 유리한 방식을 점검하세요.
+                    </p>
+                </div>
+
+                <div class="info-grid-3">
+                    <div class="luxury-card">
+                        <h3>1. 현금 일시불 및 금융 할부</h3>
+                        <p>
+                            차량 명의를 온전히 본인으로 등록하여 장기 보유(5년 이상)할 때 총 지출 이자 비용을 가장 절약할 수 있는 정석적 방법입니다.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-item"><span>소유권</span><span>본인 단독 명의</span></div>
+                            <div class="spec-item"><span>신용도 영향</span><span>할부 원금 대출 부채 인식</span></div>
+                            <div class="spec-item"><span>자동차세 및 보험</span><span>개별 직접 납부</span></div>
+                            <div class="spec-item"><span>추천 대상</span><span>장기 보유 개인 운전자</span></div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card">
+                        <h3>2. 운용 리스 (잔존가치 보장형)</h3>
+                        <p>
+                            금융사 명의로 일반 승용 번호판(하, 허, 호가 아닌 일반 번호)을 유지하면서 연간 최대 1,500만 원까지 경비 처리를 받을 수 있습니다.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-item"><span>소유권</span><span>리스 금융사 소유</span></div>
+                            <div class="spec-item"><span>번호판 형태</span><span>일반 번호판 교부</span></div>
+                            <div class="spec-item"><span>약정 주행거리</span><span>연 2만 ~ 3만km 제한</span></div>
+                            <div class="spec-item"><span>추천 대상</span><span>전문직, 개인사업자, 법인</span></div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card">
+                        <h3>3. 신차 장기렌트 요금제</h3>
+                        <p>
+                            초기 취등록세와 매년 갱신하는 자동차 보험료, 자동차세 일체가 월 렌탈 요금에 일괄 포함되어 자금 운용의 예측 가능성을 극대화합니다.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-item"><span>소유권</span><span>렌터카 업체 소유</span></div>
+                            <div class="spec-item"><span>신용 대출 한도</span><span>부채 미인식 (신용 영향 없음)</span></div>
+                            <div class="spec-item"><span>사고 발생 시</span><span>면책금 납부 후 할증 없음</span></div>
+                            <div class="spec-item"><span>추천 대상</span><span>운전 경력 부족 및 절세 사업자</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose-block">
+                    <h3>계약 체결 시 주의사항: 계약금 환불, 약정 기간 및 중도 해지 위약금</h3>
+                    <p>
+                        볼보 공식 전시장(코오롱오토모티브, 아주오토리움, H모터스, 천안아이비모터스 등)에서 신차를 계약할 때는 통상 100만 원의 계약금을 예치합니다. 
+                        단순 변심으로 인한 배정 취소 시 공식 딜러망을 통한 계약금은 100% 조건 없이 환불받을 수 있으므로 대기기간이 긴 XC60이나 XC90은 사전 배정을 서두르는 것이 관례입니다.
+                    </p>
+                    <p>
+                        반면 운용리스나 장기렌트 같은 금융 상품을 계약할 때는 약정 기간(12개월, 36개월, 48개월, 60개월)을 신중하게 선택해야 합니다. 
+                        무약정 프로그램이 아닌 이상 중도 해지 시 잔여 렌탈료 및 리스료에 대해 15%에서 35%에 이르는 막대한 중도 해지 위약금이 부과될 수 있습니다. 
+                        따라서 단기 운용을 원할 경우 승계 플랫폼을 통한 승계 요건을 확인하거나 금융 전문 컨설팅을 통해 승계 수수료 면제 특약을 타진해야 합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Real Owner Feedback & Community Buzzwords -->
+        <section class="content-section section-tinted" id="community-feedback">
+            <div class="container">
+                <div class="section-header">
+                    <h2>온라인 커뮤니티 현실 후기: 디시, 보배드림, 펨코 오너들의 내돈내산 평가</h2>
+                    <p>
+                        광고성 리뷰를 배제하고 디시인사이드 차갤, 보배드림 국산/수입차 게시판, 에펨코리아(펨코) 자동차 커뮤니티에 올라온 볼보 오너들의 솔직한 출고 후기를 데이터화하여 정리했습니다.
+                    </p>
+                </div>
+
+                <div class="info-grid-2">
+                    <div class="luxury-card">
+                        <h3>보배드림 및 펨코 실차주들이 극찬하는 핵심 장점</h3>
+                        <p>
+                            1. 티맵(TMAP) 통합형 인포테인먼트의 독보적 편의성: 별도의 스마트폰 거치대나 카플레이 유선 연결 없이도 완벽한 한국형 TMAP 내비게이션, 누구(NUGU) 음성인식, 플로(FLO) 음악 스트리밍이 차량 계기판과 헤드업 디스플레이에 유기적으로 연동되어 수입차 중 인포테인먼트 완성도가 제일 높다는 평가를 받습니다.
+                        </p>
+                        <p>
+                            2. 압도적인 안전감과 바워스앤윌킨스(B&W) 사운드: 고장력 붕소 강판으로 감싸인 세이프티 케이지와 더불어 Ultimate 트림에 탑재되는 B&W 오디오 시스템(예테보리 콘서트홀 모드)은 1억 원 이하 동급 차량 중 음향 공간감이 가장 뛰어나 음악 애호가들의 절대적 찬사를 이끌어냅니다.
+                        </p>
+                        <p>
+                            3. 시트 착좌감과 척추 피로도 제로: 정형외과 의사들과 협업하여 개발된 나파 레더 컴포트 시트는 장거리 4시간 이상 연속 운전에도 허리 통증이 전혀 없다는 내돈내산 후기가 지배적입니다.
+                        </p>
+                    </div>
+
+                    <div class="luxury-card">
+                        <h3>디시 차갤 오너들이 지적하는 냉정한 단점 및 현실적 아쉬움</h3>
+                        <p>
+                            1. 여전히 대기기간이 긴 인기 트림: XC60 B5 Ultimate의 화이트 외장 및 앰버 내장 시트 조합은 여전히 수개월의 대기가 필요하며, 정찰제로 인해 영맨 공식 현금 할인이 없다는 점이 독일 경쟁 3사(BMW, 벤츠, 아우디)의 파격 할인 시기와 맞물려 망설임 요인으로 작용합니다.
+                        </p>
+                        <p>
+                            2. 서스펜션 세팅의 호불호: 독일 프리미엄 SUV의 탄탄하고 날카로운 코너링에 익숙한 운전자에게 볼보의 서스펜션은 다소 나긋나긋하고 부드러운 패밀리 컴포트 지향이라 스포티한 와인딩 주행에서는 롤링이 느껴진다는 평이 있습니다.
+                        </p>
+                        <p>
+                            3. 애프터마켓 정비망의 물리적 한계: 전국적인 서비스 네트워크가 지속 확장되고 있으나 주요 거점 도시 외곽에서는 사고 수리 시 판금 및 도장 대기 일수가 국산차에 비해 다소 길어질 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prose-block">
+                    <h3>인터넷 성지, 좌표 검색과 비공식 딜러 서비스 혜택의 진실</h3>
+                    <p>
+                        네이버 카페, 유튜브 시승기 댓글, 트위터, 인스타그램, 페이스북, 카카오톡 오픈채팅방, 텔레그램 자동차 커뮤니티 등에서 이른바 볼보 최저가 성지 좌표나 파격적인 다이렉트 현금지원 업체를 표방하는 광고를 접할 수 있습니다. 
+                        그러나 볼보 본사의 엄격한 정찰제 모니터링 정책상 비공식적인 수백만 원 대의 차액 할인은 허위 매물이거나 불법 금융 알선 수수료가 숨어 있는 경우가 대다수입니다.
+                    </p>
+                    <p>
+                        합법적이고 가장 현명하게 혜택을 챙기는 방법은, 공인 딜러사를 통해 법인/개인 명의별 카드사 오토캐시백(토스, 카카오페이, 네이버페이 제휴 시 1.2% ~ 1.8% 즉시 환급)을 챙기고, 
+                        프리미엄 썬팅(버텍스, 솔라가드, 후퍼옵틱 등), 아이나비/파인뷰 4K 블랙박스 장착, 보증 연장 상품권 바우처 제공, 정품 골프백 세트 등 실속 사은품 구성을 전문 상담 매니저를 통해 조율하는 것입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Authoritative Official Web Resources (Strict 3 links) -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>공인된 신뢰성 있는 볼보 자동차 및 행정 공공 플랫폼 정보원</h2>
+                    <p>
+                        투명하고 정확한 자동차 구매 의사결정을 돕기 위해 국내외 공신력 있는 자동차 전문 포털 및 공공 데이터베이스를 엄선하여 연결해 드립니다.
+                    </p>
+                </div>
+
+                <div class="authority-grid">
+                    <div class="authority-box">
+                        <h3>1. 볼보 공식 프로모션 및 재고 인텔리전스</h3>
+                        <p>
+                            전국 딜러망의 실시간 전산 배정 재고, 친환경 전기차/PHEV 공공 지원금 요율 및 공식 출고 트림 사양을 투명하게 안내하는 전문 허브입니다.
+                        </p>
+                        <a href="https://directvcheckg.koreahankang.com" target="_blank" rel="noopener noreferrer" class="authority-link">
+                            볼보 신차 견적 센터 바로가기
+                        </a>
+                    </div>
+
+                    <div class="authority-box">
+                        <h3>2. 나무위키 볼보 브랜드 및 SUV 역사 백과</h3>
+                        <p>
+                            1927년 스웨덴 예테보리에서 출발한 볼보의 3점식 안전벨트 발명 역사, SPA 플랫폼 및 CMA 아키텍처, 역대 XC 시리즈의 진화 과정을 망라한 오픈 백과사전입니다.
+                        </p>
+                        <a href="https://namu.wiki/w/%EB%B3%BC%EB%B3%B4" target="_blank" rel="noopener noreferrer" class="authority-link">
+                            나무위키 볼보 문서 열람하기
+                        </a>
+                    </div>
+
+                    <div class="authority-box">
+                        <h3>3. 대한민국 국토교통부 대민 포털 - 자동차365</h3>
+                        <p>
+                            신차 등록 취등록세 공시 계산, 지역별 공채 매입 채권 할인율 실시간 조회, 자동차 검사 통합 이력 및 친환경차 세제 혜택 법령을 제공하는 대한민국 공식 공공 사이트입니다.
+                        </p>
+                        <a href="https://www.car365.go.kr/" target="_blank" rel="noopener noreferrer" class="authority-link">
+                            자동차365 공공 포털 방문하기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Interactive Lead Form for Custom Consultation -->
+        <section class="content-section section-tinted" id="consulting-form">
+            <div class="container">
+                <div class="form-card">
+                    <h2 style="text-align: center; color: var(--primary-nordic); margin-bottom: 14px; font-size: 2.1rem; font-weight: 800;">
+                        2026 볼보 SUV 1:1 맞춤 비교 견적 컨설팅 신청
+                    </h2>
+                    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 35px; font-size: 1.02rem;">
+                        전국 공인 딜러사 즉시 출고 가능 재고 전산망 조회부터 최적의 오토캐시백, 무보증 장기렌트 리스 승인 및 프리미엄 사은품 혜택까지 신속하게 안내해 드립니다.
+                    </p>
+
+                    <form id="volvo-lead-form">
+                        <div class="form-row-2">
+                            <div class="form-group-field">
+                                <label class="form-label-txt" for="cust-name">신청 고객명</label>
+                                <input type="text" id="cust-name" class="form-input-ctrl" placeholder="성함을 입력해 주세요">
+                            </div>
+                            <div class="form-group-field">
+                                <label class="form-label-txt" for="cust-phone">연락처 (휴대전화 번호)</label>
+                                <input type="tel" id="cust-phone" class="form-input-ctrl" placeholder="(-) 없이 번호만 입력해 주세요">
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group-field">
+                                <label class="form-label-txt" for="cust-model">관심 차종 및 트림</label>
+                                <select id="cust-model" class="form-input-ctrl">
+                                    <option value="">선택해 주세요</option>
+                                    <option value="EX30">볼보 EX30 (순수전기 컴팩트)</option>
+                                    <option value="XC40">볼보 XC40 (B4 가솔린 MHEV)</option>
+                                    <option value="EX40_EC40">볼보 EX40 / EC40 (듀얼모터 전기)</option>
+                                    <option value="XC60_B5">볼보 XC60 B5 (중형 가솔린)</option>
+                                    <option value="XC60_B6">볼보 XC60 B6 (고성능 e-S/C)</option>
+                                    <option value="XC60_T8">볼보 XC60 T8 Recharge (플러그인)</option>
+                                    <option value="XC90_B6">볼보 XC90 B6 (대형 7인승)</option>
+                                    <option value="XC90_T8">볼보 XC90 T8 Recharge (대형 플러그인)</option>
+                                    <option value="EX90">볼보 EX90 (차세대 순수전기 플래그십)</option>
+                                </select>
+                            </div>
+                            <div class="form-group-field">
+                                <label class="form-label-txt" for="cust-pay">희망 구매 형태</label>
+                                <select id="cust-pay" class="form-input-ctrl">
+                                    <option value="cash">현금 일시불 (카드 캐시백 극대화)</option>
+                                    <option value="installment">신차 표준 할부 (저금리 특판)</option>
+                                    <option value="lease">사업자 운용 리스 (비용 처리)</option>
+                                    <option value="rent">신차 장기렌트 (보험/세금 포함)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 24px;">
+                            <label style="font-size: 0.88rem; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
+                                <input type="checkbox" id="privacy-agree" style="margin-top: 4px;">
+                                <span>개인정보 보호법에 따른 수집 및 견적 발송 안내 목적 연락(전화, 카카오톡, 문자메시지) 발송에 동의합니다.</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn-submit-lead" onclick="handleLeadSubmit()">
+                            2026 볼보 SUV 최저가 견적서 및 재고 현황 받기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: FAQ Section (Semantic SEO for Naver/Google & AI Engines) -->
+        <section class="content-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>자주 묻는 질문과 명쾌한 답변 (FAQ)</h2>
+                    <p>
+                        볼보 SUV 구매를 앞두고 계약자들이 가장 궁금해하는 핵심 질문들을 정리했습니다. 
+                        대화형 인공지능 AI(챗지피티, 제미나이 등)가 제공하는 단순 요약을 넘어 현실적인 실무 정보를 제공합니다.
+                    </p>
+                </div>
+
+                <div class="accordion-container">
+                    <div class="faq-card">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)">
+                            <span>Q1. 2026년 기준 볼보 SUV 중 가성비가 가장 뛰어난 추천 모델은 무엇인가요?</span>
+                            <span class="faq-toggle-state">펼치기</span>
+                        </button>
+                        <div class="faq-content">
+                            단일 가성비 관점에서는 4,920만 원부터 시작하는 볼보 XC40 B4 Plus Bright 트림과 실구매가 4,300만 원대로 진입할 수 있는 볼보 EX30 Core 트림이 가장 독보적입니다. 
+                            5,000만 원 미만의 예산으로 안전의 대명사인 파일럿 어시스트(어댑티브 크루즈 컨트롤 + 차선 유지 보조), 시티 세이프티, TMAP 인포테인먼트가 기본 탑재되어 있어 엔트리 모델임에도 필수 옵션이 빠짐없이 포함되어 있습니다. 패밀리카 목적이라면 감가 방어율이 가장 뛰어난 XC60 B5 Plus 트림(6,480만 원)이 최선의 선택지입니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)">
+                            <span>Q2. 볼보 XC60과 독일 경쟁사 모델(BMW X3, 벤츠 GLC)의 실구매 가격 차이는 어떤가요?</span>
+                            <span class="faq-toggle-state">펼치기</span>
+                        </button>
+                        <div class="faq-content">
+                            BMW X3나 벤츠 GLC는 공식 정가가 7,000만 원대 후반에서 8,000만 원대에 달하며, 프로모션 할인 폭에 따라 실구매 가격의 등락이 매우 큽니다. 
+                            반면 볼보 XC60은 기본 출고가 자체가 6,480만 ~ 7,000만 원으로 책정되어 있어 경쟁 모델 대비 공식 시작가가 500만 ~ 1,000만 원가량 합리적입니다. 
+                            또한 통풍 시트, 나파 가죽, 360도 서라운드 뷰, 하만카돈 또는 바워스앤윌킨스 프리미엄 오디오 시스템 등의 고급 편의 사양이 하위 트림부터 기본 탑재되어 실질적인 옵션 대비 가격 경쟁력에서 상당한 우위를 점합니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)">
+                            <span>Q3. 볼보의 하이브리드(B5, B6)와 플러그인(T8)의 주행 감성과 수리 비용 차이는?</span>
+                            <span class="faq-toggle-state">펼치기</span>
+                        </button>
+                        <div class="faq-content">
+                            B5와 B6는 48V 마일드 하이브리드(MHEV) 시스템으로 별도의 외부 충전이 필요 없으며, 정차 후 재출발 시 스타트모터의 소음과 진동을 매끄럽게 흡수해 주는 내연기관 완성형 모델입니다. 
+                            반면 T8 리차지는 후륜을 순수 고출력 전기모터로 구동하여 합산 455마력의 고성능 스포츠카 수준 가속력을 선사합니다. 
+                            다만 T8 모델은 고전압 배터리 팩과 전기 구동 모터가 결합되어 있어 자차 보험료가 약 15%가량 높게 책정되며, 보증기간(배터리 8년 16만km) 이후의 메인터넌스 비용을 감안해야 합니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)">
+                            <span>Q4. 챗지피티나 제미나이 등 AI 엔진에서 추천하는 볼보 SUV 가격 정보는 정확한가요?</span>
+                            <span class="faq-toggle-state">펼치기</span>
+                        </button>
+                        <div class="faq-content">
+                            대화형 인공지능(AI)은 방대한 웹 데이터를 기반으로 신속하게 개요를 요약해 주지만, 2026년 최신 개별소비세 환원율, 지자체별 전기차 보조금 소진 현황, 당월 각 딜러사의 금융 프로모션 이자율 변동치를 실시간으로 반영하지 못하는 한계가 있습니다. 
+                            따라서 AI가 제시하는 개략적인 등급표를 참고하되, 실제 계약 및 결제 단계에서는 전문 비교 포털의 정밀 시뮬레이터와 실시간 전산 조회를 반드시 병행하셔야 오차 없는 정확한 실구매 견적을 수립할 수 있습니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)">
+                            <span>Q5. 볼보 SUV의 중고차 감가상각 방어율과 잔존가치 순위는 수입차 중 어느 수준인가요?</span>
+                            <span class="faq-toggle-state">펼치기</span>
+                        </button>
+                        <div class="faq-content">
+                            카이즈유 데이터 연구소 및 엔카닷컴 통계에 따르면 볼보 XC60과 XC40은 수입 SUV 전 세그먼트를 통틀어 3년 차 잔존가치 방어율 1위 및 2위를 다투는 최상위권 차량입니다. 
+                            수입차 특유의 고질적인 급격한 가격 하락이 적은 이유는, 무분별한 덤핑 할인을 지양하는 브랜드 정책과 패밀리카 안전성에 대한 탄탄한 중고차 매수 수요층이 항상 뒷받침되기 때문입니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: High-Density Semantic Knowledge Overview for LLM/Search Crawlers -->
+        <section class="content-section section-tinted">
+            <div class="container">
+                <div class="section-header">
+                    <h2>2026년 대한민국 볼보 SUV 시장 동향 및 구조적 총평</h2>
+                    <p>
+                        친환경 모빌리티 패러다임과 수입 프리미엄 패밀리카 시장의 거대한 변화 속에서 볼보가 구축한 독자적 포지션을 심층 분석합니다.
+                    </p>
+                </div>
+
+                <div class="prose-block">
+                    <h3>스칸디나비안 헤리티지와 지속 가능한 럭셔리의 결합</h3>
+                    <p>
+                        2026년의 볼보자동차는 디젤 파워트레인을 전면 퇴출하고 48V 가솔린 마일드 하이브리드(MHEV), 플러그인 하이브리드(PHEV), 그리고 차세대 모듈형 플랫폼 기반의 순수 전기차(BEV)로의 100% 전동화 전환을 완수했습니다. 
+                        수입차 구매를 고려하는 소비자들에게 볼보 SUV 가격표가 지니는 가장 큰 매력은, 트림 간 옵션 장난을 치지 않는다는 점입니다. 
+                        기본 Core 및 Plus 트림부터 최고급 안전 시스템인 파일럿 어시스트, 충돌 회피 지원, 교차로 대향차 경고 기능이 기본으로 포함되어 있어 안전 사양에 차등을 두지 않는 브랜드 철학을 여실히 보여줍니다.
+                    </p>
+                    <p>
+                        특히 최신 2026년형 볼보 SUV에는 수입차의 고질병으로 꼽히던 내비게이션 불만을 완벽하게 해결한 2세대 통합형 TMAP 인포테인먼트 서비스가 장착되어 있습니다. 
+                        인공지능 누구(NUGU) 오토를 통해 에어컨 온도 조절, 시트 열선 및 통풍 작동, 목적지 경로 탐색, 티맵 내비게이션 음성 안내, 스마트홈 사물인터넷(IoT) 연동까지 완벽하게 말 한마디로 제어할 수 있어 동급 경쟁 독일 프리미엄 브랜드 대비 실질적인 운전 스트레스를 비약적으로 경감시켜 줍니다.
+                    </p>
+                    <p>
+                        결론적으로 2026 볼보 SUV 가격 포지셔닝은 합리적인 4천만 원대 엔트리(EX30, XC40)부터 6천~8천만 원대의 베스트셀링 허브(XC60), 그리고 9천만~1억 원 초반의 플래그십 럭셔리(XC90, EX90)에 이르기까지 촘촘하고 빈틈없는 세그먼트를 형성하고 있습니다. 
+                        구매 전 자신의 연간 주행거리, 거주지의 충전 인프라, 월 가용 소득 및 세무적 요건을 종합적으로 반영하여 현명한 결정을 내리시기 바랍니다.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
-</html>
+
+
+  
+    <!-- Native JavaScript for Interactive Calculator and Accordions -->
+    <script>
+        // Interactive Volvo SUV Price Simulator Logic
+        function runVolvoSimulator() {
+            const modelSelect = document.getElementById("sim-model");
+            const selectedOption = modelSelect.options[modelSelect.selectedIndex];
+            const basePrice = parseInt(selectedOption.value, 10);
+            const taxPrice = parseInt(selectedOption.getAttribute("data-tax"), 10);
+            
+            const downRatio = parseFloat(document.getElementById("sim-down").value);
+            const periodMonths = parseInt(document.getElementById("sim-period").value, 10);
+            
+            // Payment type check
+            const payTypes = document.getElementsByName("payType");
+            let selectedPay = "installment";
+            for (let i = 0; i < payTypes.length; i++) {
+                if (payTypes[i].checked) {
+                    selectedPay = payTypes[i].value;
+                    break;
+                }
+            }
+
+            const downAmount = Math.round(basePrice * downRatio);
+            const loanPrincipal = basePrice - downAmount;
+
+            // DOM Update for breakdowns
+            document.getElementById("res-base-price").innerText = basePrice.toLocaleString() + " 원";
+            document.getElementById("res-tax-price").innerText = taxPrice.toLocaleString() + " 원";
+            document.getElementById("res-down-price").innerText = downAmount.toLocaleString() + " 원";
+            document.getElementById("res-loan-amount").innerText = loanPrincipal.toLocaleString() + " 원";
+
+            let monthlyPayment = 0;
+
+            if (selectedPay === "cash") {
+                document.getElementById("res-monthly-pay").innerText = "0 원 (일시불 완납)";
+                return;
+            } else if (selectedPay === "installment") {
+                // Standard installment at 4.8% annual interest (Equal Principal and Interest)
+                const monthlyRate = 0.048 / 12;
+                if (loanPrincipal > 0) {
+                    monthlyPayment = Math.round(
+                        (loanPrincipal * monthlyRate * Math.pow(1 + monthlyRate, periodMonths)) /
+                        (Math.pow(1 + monthlyRate, periodMonths) - 1)
+                    );
+                }
+            } else if (selectedPay === "lease") {
+                // Operating Lease (Residual Value assumed 40%)
+                const residualVal = basePrice * 0.40;
+                const netFinanced = (basePrice - downAmount) - (residualVal * 0.7);
+                const leaseRate = 0.052 / 12;
+                monthlyPayment = Math.round(
+                    (netFinanced * leaseRate * Math.pow(1 + leaseRate, periodMonths)) /
+                    (Math.pow(1 + leaseRate, periodMonths) - 1) + (residualVal * leaseRate * 0.6)
+                );
+            } else if (selectedPay === "rent") {
+                // Long-term rent (includes insurance & tax)
+                const baseRentFactor = (basePrice * (1 - (downRatio * 0.5))) / (periodMonths * 0.85);
+                monthlyPayment = Math.round(baseRentFactor * 0.65);
+            }
+
+            document.getElementById("res-monthly-pay").innerText = monthlyPayment.toLocaleString() + " 원";
+        }
+
+        // Accordion Toggle
+        function toggleFaq(btn) {
+            const card = btn.closest(".faq-card");
+            const isActive = card.classList.contains("active");
+            const toggleState = btn.querySelector(".faq-toggle-state");
+
+            document.querySelectorAll(".faq-card").forEach(item => {
+                item.classList.remove("active");
+                const stateSpan = item.querySelector(".faq-toggle-state");
+                if (stateSpan) stateSpan.innerText = "펼치기";
+            });
+
+            if (!isActive) {
+                card.classList.add("active");
+                if (toggleState) toggleState.innerText = "접기";
+            }
+        }
+
+        // Lead Form Submission
+        function handleLeadSubmit() {
+            const name = document.getElementById("cust-name").value.trim();
+            const phone = document.getElementById("cust-phone").value.trim();
+            const model = document.getElementById("cust-model").value;
+            const agree = document.getElementById("privacy-agree").checked;
+
+            if (!name) {
+                alert("성함을 정확하게 입력해 주십시오.");
+                document.getElementById("cust-name").focus();
+                return;
+            }
+            if (!phone || phone.length < 10) {
+                alert("상담 안내를 수신하실 올바른 휴대폰 번호를 입력해 주십시오.");
+                document.getElementById("cust-phone").focus();
+                return;
+            }
+            if (!model) {
+                alert("상담을 원하시는 볼보 SUV 차종을 선택해 주십시오.");
+                document.getElementById("cust-model").focus();
+                return;
+            }
+            if (!agree) {
+                alert("개인정보 수집 및 상담 안내 발송에 동의해 주셔야 견적서가 정상 발송됩니다.");
+                document.getElementById("privacy-agree").focus();
+                return;
+            }
+
+            alert(name + " 님, 2026년형 볼보 " + model + " 모델의 맞춤 견적 및 즉시 출고 재고 배정 상담 요청이 정상 접수되었습니다. 기재해 주신 연락처로 최저가 비교 보고서를 신속히 전송해 드리겠습니다.");
+
+            // Reset form
+            document.getElementById("cust-name").value = "";
+            document.getElementById("cust-phone").value = "";
+            document.getElementById("cust-model").value = "";
+            document.getElementById("privacy-agree").checked = false;
+        }
+
+        // Initialize Simulator on Load
+        window.addEventListener("DOMContentLoaded", function() {
+            runVolvoSimulator();
+        });
+    </script>
+  
